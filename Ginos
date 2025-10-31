@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gino's Taste 🍔</title>
+  <style>
+    body {
+      background: linear-gradient(45deg, #00ffff, #ff00ff, #00ff00);
+      background-size: 400% 400%;
+      animation: gradientShift 10s infinite alternate;
+      color: #fff;
+      font-family: "Comic Sans MS", "Papyrus", cursive;
+      text-align: center;
+      margin: 0;
+    }
+
+    @keyframes gradientShift {
+      0% {background-position: 0% 50%;}
+      100% {background-position: 100% 50%;}
+    }
+
+    header {
+      background: #000;
+      color: #00ffcc;
+      padding: 20px;
+      border-bottom: 5px double #ff00ff;
+      text-shadow: 2px 2px #ff00ff;
+    }
+
+    marquee {
+      background: #ff00ff;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.2em;
+      padding: 10px 0;
+      border-top: 3px dashed #00ffff;
+      border-bottom: 3px dashed #00ffff;
+    }
+
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      background: rgba(0, 0, 0, 0.5);
+      border: 3px ridge #00ffff;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-size: 3em;
+      text-shadow: 3px 3px #ff00ff;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      color: #00ffff;
+      text-shadow: 2px 2px #ff00ff;
+    }
+
+    img {
+      width: 250px;
+      height: auto;
+      border: 3px solid #ff00ff;
+      border-radius: 10px;
+      margin: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    img:hover {
+      transform: rotate(-5deg) scale(1.1);
+    }
+
+    .recipe {
+      margin-bottom: 30px;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #fff;
+    }
+
+    .counter {
+      background: #000;
+      display: inline-block;
+      padding: 5px 10px;
+      border: 2px groove #ff00ff;
+      margin-top: 10px;
+      font-family: monospace;
+    }
+
+    .under-construction {
+      margin-top: 30px;
+    }
+
+    /* Hide YouTube frame but keep sound */
+    iframe#bg-music {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🎵 Background music autoplay (Masayoshi Takanaka – Blue Lagoon) -->
+  <iframe 
+    id="bg-music"
+    src="https://www.youtube.com/embed/_G4bZkRPNoA?autoplay=1&mute=0&loop=1&playlist=_G4bZkRPNoA"
+    allow="autoplay"
+  ></iframe>
+
+  <header>
+    <h1>🍕 Gino's Taste 🍔</h1>
+    <p>The most radical recipes on the net!</p>
+  </header>
+
+  <marquee behavior="alternate" direction="left">🔥 Welcome to Gino's Taste — Serving up flavor since Y2K! 🔥</marquee>
+
+  <div class="container">
+    <div class="recipe">
+      <h2>✨ Neon Nachos ✨</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Plate_of_nachos.jpg" alt="Nachos">
+      <p>Cheesy, spicy, and crunchy enough to make your taste buds say “woah, dude!”</p>
+    </div>
+
+    <div class="recipe">
+      <h2>🍩 Dreamy Donuts 🍩</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Glazed-Donut.jpg" alt="Donuts">
+      <p>Like your favorite 2000s pop song — sugary, colorful, and impossible to forget.</p>
+    </div>
+
+    <div class="recipe">
+      <h2>🍝 Retro Ravioli 🍝</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Ravioli.jpg" alt="Ravioli">
+      <p>Grandma meets MySpace with this pasta classic topped in technicolor sauce!</p>
+    </div>
+
+    <div class="under-construction">
+      <img src="https://www.animatedimages.org/data/media/151/animated-under-construction-image-0003.gif" alt="Under Construction">
+      <p>New recipes coming soon... stay tuned!</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Thanks for visiting Gino's Taste!</p>
+    <div class="counter">👀 Visitor #: 000123</div>
+    <p style="margin-top: 15px;">&copy; 2000-2025 Gino’s Taste. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
